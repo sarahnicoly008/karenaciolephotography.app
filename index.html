@@ -1,1 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aciole Photography</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Aciole Photography — Galeria, Nossos Planos e Agendamento" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.svg" alt="Aciole Photography logo" class="logo" />
+      <div>
+        <h1>Aciole Photography</h1>
+        <p class="tagline">Capturando momentos que viram memórias</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#galeria">Galeria</a>
+      <a href="#planos">Nossos Planos</a>
+      <a href="#agendamento">Agendamento</a>
+      <a href="admin.html" class="admin-link">Painel Administrativo</a>
+    </nav>
+  </header>
 
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <h2>Fotografia profissional para todos momentos</h2>
+        <p>Casamentos, Smash the Cake, Sessões Temáticas, Boudoir e muito mais. Explore nossa galeria e escolha seu plano.</p>
+        <a href="#agendamento" class="btn">Agende agora</a>
+      </div>
+    </section>
+
+    <section id="galeria" class="section">
+      <h2>Galeria de Eventos</h2>
+      <p class="muted">
+        Observação sobre sessões de casamento: normalmente agende entre 3 a 12 meses antes do casamento.
+        Sessões de casamento (nos EUA) estão disponíveis apenas nas épocas: Primavera, Outono e Inverno.
+      </p>
+
+      <div class="filters">
+        <button data-filter="all" class="active">Todos</button>
+        <button data-filter="wedding">Casamento</button>
+        <button data-filter="smash">Smash the Cake</button>
+        <button data-filter="thematic">Temáticas</button>
+        <button data-filter="boudoir">Boudoir</button>
+        <button data-filter="seasonal">Por Época</button>
+      </div>
+
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- Sample items: placeholders with captions -->
+        <figure class="gallery-item" data-type="wedding seasonal-fall">
+          <div class="thumb wedding">Casamento - Outono</div>
+          <figcaption>Ensaio pré-casamento — Outono</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-type="wedding seasonal-spring">
+          <div class="thumb wedding">Casamento - Primavera</div>
+          <figcaption>Elopement na Primavera</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-type="wedding seasonal-winter">
+          <div class="thumb wedding">Casamento - Inverno</div>
+          <figcaption>Wedding invernal</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-type="smash">
+          <div class="thumb smash">Smash the Cake</div>
+          <figcaption>Smash the Cake — 1 ano</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-type="thematic christmas">
+          <div class="thumb thematic">Natal</div>
+          <figcaption>Sessão temática de Natal</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-type="thematic easter">
+          <div class="thumb thematic">Páscoa</div>
+          <figcaption>Sessão de Páscoa</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-type="thematic valentines">
+          <div class="thumb thematic">Dia dos Namorados</div>
+          <figcaption>Ensaio romântico — 14 de Fevereiro</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-type="thematic mothers fathers">
+          <div class="thumb thematic">Dia das Mães/Pais</div>
+          <figcaption>Sessões especiais para famílias</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-type="boudoir">
+          <div class="thumb boudoir">Boudoir</div>
+          <figcaption>Sessão Boudoir intimista</figcaption>
+        </figure>
+      </div>
+
+      <div class="legend">
+        <h4>Sessões temáticas (datas nos EUA)</h4>
+        <ul>
+          <li>Natal — 25 de Dezembro (sessões natalinas: Novembro e Dezembro)</li>
+          <li>Páscoa — data móvel (geralmente Março ou Abril)</li>
+          <li>Dia dos Namorados — 14 de Fevereiro</li>
+          <li>Dia das Mães — 2º domingo de Maio</li>
+          <li>Dia dos Pais — 3º domingo de Junho</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="planos" class="section">
+      <h2>Nossos Planos</h2>
+
+      <div class="market-research">
+        <h3>Pesquisa de mercado resumida</h3>
+        <p>
+          Com base em práticas comuns do mercado de fotografia nos EUA (média nacional para fotógrafos profissionais):
+          sessões pequenas (mini) variam entre US$100–US$300; sessões completas (ensaio família/gestante/portrait) entre US$250–US$800; smash the cake entre US$120–US$350; sessões boudoir entre US$300–US$900;
+          casamentos variam amplamente: pacotes básicos (cerimônia curta) a partir de US$1.000, pacotes completos entre US$2.000–US$6.000 ou mais dependendo de horas e álbuns.
+        </p>
+        <p>Com isso definimos pacotes abaixo, competitivos e claros.</p>
+      </div>
+
+      <div class="plans-grid">
+        <article class="plan">
+          <h3>Wedding — Básico</h3>
+          <p class="price">US$1.200</p>
+          <ul>
+            <li>4 horas de cobertura</li>
+            <li>1 fotógrafo</li>
+            <li>50 imagens digitais editadas</li>
+            <li>Galeria privada por 3 meses</li>
+          </ul>
+          <button class="btn select-plan" data-plan="Wedding Básico">Selecionar</button>
+        </article>
+
+        <article class="plan">
+          <h3>Wedding — Standard</h3>
+          <p class="price">US$2.500</p>
+          <ul>
+            <li>8 horas de cobertura</li>
+            <li>2 fotógrafos</li>
+            <li>150 imagens editadas</li>
+            <li>Álbum 20 páginas (impresso)</li>
+            <li>Galeria privada por 12 meses</li>
+          </ul>
+          <button class="btn select-plan" data-plan="Wedding Standard">Selecionar</button>
+        </article>
+
+        <article class="plan">
+          <h3>Wedding — Premium</h3>
+          <p class="price">US$4.500</p>
+          <ul>
+            <li>Cobertura completa (até 12 horas)</li>
+            <li>2 fotógrafos + assistente</li>
+            <li>Todos os arquivos editados</li>
+            <li>Álbum premium 40 páginas</li>
+            <li>Sessão pré-casamento inclusa</li>
+          </ul>
+          <button class="btn select-plan" data-plan="Wedding Premium">Selecionar</button>
+        </article>
+
+        <article class="plan">
+          <h3>Smash the Cake</h3>
+          <p class="price">US$180</p>
+          <ul>
+            <li>30–45 minutos de sessão</li>
+            <li>20 imagens editadas</li>
+            <li>Opções de cenário temático</li>
+            <li>Entrega digital em 2 semanas</li>
+          </ul>
+          <button class="btn select-plan" data-plan="Smash the Cake">Selecionar</button>
+        </article>
+
+        <article class="plan">
+          <h3>Boudoir</h3>
+          <p class="price">US$450</p>
+          <ul>
+            <li>1 a 2 horas de sessão</li>
+            <li>10–20 imagens editadas</li>
+            <li>Direção de poses e styling</li>
+            <li>Privacidade e entrega discreta</li>
+          </ul>
+          <button class="btn select-plan" data-plan="Boudoir">Selecionar</button>
+        </article>
+
+        <article class="plan">
+          <h3>Sessões Temáticas / Mini</h3>
+          <p class="price">US$140</p>
+          <ul>
+            <li>Mini sessão 20–30 minutos</li>
+            <li>5–10 imagens editadas</li>
+            <li>Datas pré-agendadas (Natal, Páscoa, etc.)</li>
+          </ul>
+          <button class="btn select-plan" data-plan="Sessão Temática Mini">Selecionar</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="agendamento" class="section">
+      <h2>Agendamento</h2>
+      <p class="muted">Preencha o formulário abaixo. Para casamentos, recomendamos agendar entre 3 a 12 meses antes da data.</p>
+
+      <form id="booking-form" class="form">
+        <div class="form-row">
+          <label for="name">Nome</label>
+          <input id="name" name="name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Telefone</label>
+          <input id="phone" name="phone" />
+        </div>
+
+        <div class="form-row">
+          <label for="session-type">Tipo de Sessão</label>
+          <select id="session-type" name="sessionType" required>
+            <option value="">-- selecione --</option>
+            <option value="Wedding">Casamento</option>
+            <option value="Smash the Cake">Smash the Cake</option>
+            <option value="Boudoir">Boudoir</option>
+            <option value="Thematic">Sessão Temática</option>
+            <option value="Portrait">Portrait / Família</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="season">Época / Estação</label>
+          <select id="season" name="season">
+            <option value="">-- selecione (opcional) --</option>
+            <option value="spring">Primavera</option>
+            <option value="summer">Verão</option>
+            <option value="fall">Outono</option>
+            <option value="winter">Inverno</option>
+          </select>
+          <small id="season-note" class="muted"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="plan">Plano desejado</label>
+          <select id="plan" name="plan">
+            <option value="">-- selecione um plano --</option>
+            <option>Wedding — Básico</option>
+            <option>Wedding — Standard</option>
+            <option>Wedding — Premium</option>
+            <option>Smash the Cake</option>
+            <option>Boudoir</option>
+            <option>Sessão Temática Mini</option>
+            <option>Personalizado</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="date">Data pretendida</label>
+          <input id="date" name="date" type="date" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Mensagem / Detalhes</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar pedido</button>
+          <button type="reset" class="btn">Limpar</button>
+        </div>
+
+        <p id="form-status" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Aciole Photography — Todos os direitos reservados</p>
+    <p class="muted">Endereço de exemplo · contato@aciolephoto.com · (555) 123-4567</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,1 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Painel Administrativo — Aciole Photography</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.svg" alt="Aciole Photography logo" class="logo" />
+      <div>
+        <h1>Painel Administrativo</h1>
+        <p class="tagline">Aciole Photography — Mensagens e Agendamentos</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Voltar ao site</a>
+    </nav>
+  </header>
 
+  <main class="section">
+    <h2>Mensagens recebidas</h2>
+    <p class="muted">As mensagens enviadas pelo formulário de Agendamento aparecem abaixo com a data e hora de envio.</p>
+
+    <div id="messages-container" style="margin-top:12px;"></div>
+
+    <div style="margin-top:12px;">
+      <button id="refresh" class="btn">Atualizar</button>
+      <button id="clear-all" class="btn" style="background:#fff">Apagar todas</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="muted">Painel local — implementado em JavaScript/LocalStorage</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

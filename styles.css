@@ -1,1 +1,87 @@
+:root{
+  --accent:#2a6f9e;
+  --accent-2:#f0a500;
+  --bg:#f7f8fb;
+  --text:#213547;
+  --muted:#6b7a86;
+  --card:#ffffff;
+  --radius:10px;
+}
 
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background:linear-gradient(180deg,#fbfdff 0%, #f7f8fb 100%);
+  -webkit-font-smoothing:antialiased;
+}
+
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 28px;
+  background:var(--card);
+  border-bottom:1px solid #eef3f7;
+  position:sticky;
+  top:0;
+  z-index:20;
+}
+
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:64px;height:64px}
+.brand h1{margin:0;font-size:20px}
+.tagline{margin:0;color:var(--muted);font-size:13px}
+
+nav a{margin-left:14px;color:var(--accent);text-decoration:none;font-weight:600}
+nav a.admin-link{background:#eef9ff;padding:8px 10px;border-radius:8px}
+
+.hero{
+  padding:54px 24px;
+  text-align:center;
+  background:linear-gradient(90deg, rgba(42,111,158,0.06), rgba(240,165,0,0.04));
+}
+.hero-inner{max-width:900px;margin:0 auto}
+.hero h2{margin:0 0 12px 0;font-size:28px}
+.hero p{margin:0 0 18px 0;color:var(--muted)}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;border:none;cursor:pointer}
+.btn.primary{background:var(--accent-2)}
+.section{max-width:1100px;margin:28px auto;padding:18px}
+
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.filters button{padding:8px 12px;border-radius:8px;border:1px solid #e6eef5;background:#fff;cursor:pointer}
+.filters button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:10px}
+.gallery-item{background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 6px 16px rgba(15,30,40,0.04)}
+.gallery-item .thumb{height:150px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.thumb.wedding{background:linear-gradient(120deg,#2a6f9e,#245c82)}
+.thumb.smash{background:linear-gradient(120deg,#f57f17,#f0a500)}
+.thumb.thematic{background:linear-gradient(120deg,#9b59b6,#8e44ad)}
+.thumb.boudoir{background:linear-gradient(120deg,#d35400,#c0392b)}
+.gallery-item figcaption{padding:12px;color:var(--muted)}
+
+.legend{margin-top:12px;background:#fff;padding:12px;border-radius:8px;border:1px solid #eef3f7;color:var(--muted)}
+.legend ul{margin:8px 0 0 18px}
+
+.plans-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:16px}
+.plan{background:var(--card);padding:14px;border-radius:10px;border:1px solid #eef3f7}
+.plan h3{margin:0 0 6px 0}
+.price{font-size:20px;color:var(--accent);margin:6px 0}
+.plan ul{margin:0 0 10px 18px;color:var(--muted)}
+
+.form{background:var(--card);padding:14px;border-radius:10px;border:1px solid #eef3f7}
+.form-row{display:flex;flex-direction:column;margin-bottom:10px}
+.form-row label{font-weight:600;margin-bottom:6px}
+.form-row input,.form-row select,.form-row textarea{padding:10px;border-radius:8px;border:1px solid #dfeaf2}
+.form-actions{display:flex;gap:8px;align-items:center}
+.muted{color:var(--muted)}
+.site-footer{text-align:center;padding:18px 6px;color:var(--muted);border-top:1px solid #eef3f7;margin-top:30px}
+
+/* Responsive */
+@media (max-width:720px){
+  .site-header{flex-direction:column;align-items:flex-start;gap:10px}
+  nav{display:flex;gap:8px}
+}
